@@ -11,6 +11,11 @@
 		964BB61E27B1286A00571258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964BB61D27B1286A00571258 /* ContentView.swift */; };
 		964BB62027B1286D00571258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964BB61F27B1286D00571258 /* Assets.xcassets */; };
 		964BB62327B1286D00571258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964BB62227B1286D00571258 /* Preview Assets.xcassets */; };
+		964BB62A27B1594E00571258 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964BB62927B1594E00571258 /* Location.swift */; };
+		964BB62C27B15E4100571258 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964BB62B27B15E4100571258 /* EditView.swift */; };
+		964BB62E27B16EA300571258 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964BB62D27B16EA300571258 /* Result.swift */; };
+		964BB63027B1748F00571258 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964BB62F27B1748F00571258 /* ContentView-ViewModel.swift */; };
+		964BB63227B1790000571258 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964BB63127B1790000571258 /* FileManager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		964BB61D27B1286A00571258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		964BB61F27B1286D00571258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		964BB62227B1286D00571258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		964BB62927B1594E00571258 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		964BB62B27B15E4100571258 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		964BB62D27B16EA300571258 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		964BB62F27B1748F00571258 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		964BB63127B1790000571258 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				964BB61B27B1286A00571258 /* BucketListApp.swift */,
+				964BB62927B1594E00571258 /* Location.swift */,
+				964BB62F27B1748F00571258 /* ContentView-ViewModel.swift */,
 				964BB61D27B1286A00571258 /* ContentView.swift */,
+				964BB63127B1790000571258 /* FileManager-DocumentsDirectory.swift */,
+				964BB62D27B16EA300571258 /* Result.swift */,
+				964BB62B27B15E4100571258 /* EditView.swift */,
 				964BB61F27B1286D00571258 /* Assets.xcassets */,
 				964BB62127B1286D00571258 /* Preview Content */,
 			);
@@ -138,6 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				964BB61E27B1286A00571258 /* ContentView.swift in Sources */,
+				964BB63227B1790000571258 /* FileManager-DocumentsDirectory.swift in Sources */,
+				964BB63027B1748F00571258 /* ContentView-ViewModel.swift in Sources */,
+				964BB62E27B16EA300571258 /* Result.swift in Sources */,
+				964BB62A27B1594E00571258 /* Location.swift in Sources */,
+				964BB62C27B15E4100571258 /* EditView.swift in Sources */,
 				964BB61C27B1286A00571258 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,6 +292,7 @@
 				DEVELOPMENT_TEAM = VUNZN5P9T8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need to use FaceID to unlock data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +322,7 @@
 				DEVELOPMENT_TEAM = VUNZN5P9T8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need to use FaceID to unlock data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
