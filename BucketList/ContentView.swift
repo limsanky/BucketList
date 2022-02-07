@@ -70,6 +70,10 @@ struct ContentView: View {
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert("Authentication Failed", isPresented: $viewModel.failedAuthentication) {
+                Button("Retry") { }
+                Button("OK") { }
+            }
         }
     }
 }

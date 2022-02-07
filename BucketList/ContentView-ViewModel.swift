@@ -17,6 +17,7 @@ extension ContentView {
         @Published var selectedPlace: Location?
         
         @Published var isUnlocked = false
+        @Published var failedAuthentication = false
         
         let savePath = FileManager.getDocumentURL(of: "SavedPlaces")
         
@@ -64,12 +65,15 @@ extension ContentView {
                     if success {
                         Task { @MainActor in
                             self.isUnlocked = true
+                            self.failedAuthentication = false
                         }
 //                        DispatchQueue.main.async {
 //                            self.isUnlocked = true
 //                        }
                     } else {
-                        
+                        Task { @MainActor in
+                            self.failedAuthentication = true
+                        }
                     }
                 }
             } else {
